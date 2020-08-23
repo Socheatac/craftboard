@@ -36,8 +36,9 @@ When: 8/23/20
 
 
 Credits
-https://w3school.com
-https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap
-https://www.pexels.com
-https://block81.com/blog/a-readme-for-simple-websites
+- https://w3school.com
+- https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap
+- https://www.pexels.com
+- https://block81.com/blog/a-readme-for-simple-websites
+
 Built & designed by Socheata Chhum.
