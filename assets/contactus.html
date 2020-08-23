@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CraftBoard</title>
+    <link rel="stylesheet" href="/style/styles.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="paper">
+    <!-- <div class="container-fluid "> -->
+    <div class="row padding-top">
+        <div class="col">
+            <!--welcome stranger-->
+            <h5>Welcome Stranger</h5>
+        </div>
+    </div>
+    <!-- home, about us, login -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent ">
+        <h4 style="font-size: 40px;">Craft Board</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse hover" id="collapse">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/index.html">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/subbox.html">
+                        <h4>Subscription Box</h4>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/assets/contactus.html">
+                        <h4>Contact Us</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/login.html">
+                        <h4>Member Login</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/signup.html">
+                        <h4>Sign Up</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- contact us page -->
+
+    <div class="container-fluid">
+
+        <div class="w3-content" style="width:100% !important;">
+            <img class="mySlides" src="/src/img/contactus/contactus.jpg" alt="custom_html_banner1" style="width:100%">
+            <img class="mySlides" src="/src/img/contactus/phone.jpg" alt="custom_html_banner2" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
+    </div>
+    <!-- contact us form  -->
+    <div class="container-fluid">
+        <div class="row bg-orange">
+            <div class="col text-center">
+                <h2>Contact Us</h2>
+                <h5>Feel free to write us about any concern you have.. we will get back to you as soon as possible</h5>
+            </div>
+        </div>
+        <div class="row offset-4 padding">
+            <div class="col-md-6 col-lg-6 ">
+                <form id="contactForm">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" placeholder="Your first name" required pattern = '/^[A-Za-z]+([\ A-Za-z]+)*/$'>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname"placeholder="Your last name" required pattern = '/^[A-Za-z]+([\ A-Za-z]+)*/$'>
+                    <label for="email">Email</label>
+                    <input id="email" required type="text" name="email" placeholder="Your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px" required></textarea>
+                    <input class=" bg-orange" id="submit" type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+
+
+        <!-- accordion Q&A -->
+        <div class="row padding">
+            <div class="col">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>Common Question #1</p>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                                    ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                    truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                    bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <p>Common Question #2</p>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                                    ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                    truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                    bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p>Common Question #3</p>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
+                                    ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                    truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                    bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- calendar table -->
+
+<table id="calendar" class="padding">
+    <caption>August 2020</caption>
+    <tr class="weekdays">
+      <th scope="col">Sunday</th>
+      <th scope="col">Monday</th>
+      <th scope="col">Tuesday</th>
+      <th scope="col">Wednesday</th>
+      <th scope="col">Thursday</th>
+      <th scope="col">Friday</th>
+      <th scope="col">Saturday</th>
+    </tr>
+  
+    <tr class="days">
+      <td class="day other-month">
+        <div class="date">26</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">27</div>
+        
+      </td>
+      <td class="day other-month">
+        <div class="date">28</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">29</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">30</div>
+      </td>
+  
+  
+      <td class="day other-month">
+        <div class="date">31</div>
+      </td>
+      <td class="day ">
+        <div class="date">1</div>
+
+        <div class="event">
+          <div class="event-desc">
+            New Subscription Box unveil
+          </div>
+  
+          <div class="event-time">
+            at 8am Eastern Time Zone
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">
+        <div class="date">2</div>
+        <div class="event">
+            <div class="event-desc">
+             Open for subscriber box selection
+            </div>
+    
+            <div class="event-time">
+              at 8am Eastern Time Zone
+            </div>
+          </div>
+
+      </td>
+      <td class="day">
+        <div class="date">3</div>
+        
+      </td>
+      <td class="day">
+        <div class="date">4</div>
+      </td>
+      <td class="day">
+        <div class="date">5</div>
+      </td>
+      <td class="day">
+        <div class="date">6</div>
+        
+      </td>
+      <td class="day">
+        <div class="date">7</div>
+      </td>
+      <td class="day">
+        <div class="date">8</div>
+        <div class="event">
+            <div class="event-desc">
+             Close subscriber box selection
+            </div>
+    
+            <div class="event-time">
+                Open for subscriber box selection
+            </div>
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">
+        <div class="date">9</div>
+        
+      </td>
+      <td class="day">
+        <div class="date">10</div>
+        <div class="event">
+            <div class="event-desc">
+             Subscription Box Shipping Out Date
+            </div>
+    
+            <div class="event-time">
+                8am Eastern Time Zone
+            </div>
+          </div>
+      </td>
+      <td class="day">
+        <div class="date">11</div>
+      </td>
+      <td class="day">
+        <div class="date">12</div>
+      </td>
+      <td class="day">
+        <div class="date">13</div>
+      
+      </td>
+      <td class="day">
+        <div class="date">14</div>
+      </td>
+      <td class="day">
+        <div class="date">15</div>
+      </td>
+    </tr>
+    <tr>
+  
+      <td class="day">
+        <div class="date">16</div>
+      </td>
+      <td class="day">
+        <div class="date">17</div>
+
+        <div class="event">
+            <div class="event-desc">
+              Latest for the box to arrive.
+            </div>
+            <div class="event-time">
+             5pm Eastern Time Zone
+            </div>
+          </div>
+      </td>
+      <td class="day">
+        <div class="date">18</div>
+      </td>
+      <td class="day">
+        <div class="date">19</div>
+      </td>
+      <td class="day">
+        <div class="date">20</div>
+      </td>
+      <td class="day">
+        <div class="date">21</div>
+       
+      </td>
+      <td class="day">
+        <div class="date">22</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="day">
+        <div class="date">23</div>
+      </td>
+      <td class="day">
+        <div class="date">24</div>
+        <div class="event">
+          <div class="event-desc">
+            Open for Comment and Feedback from Subscriber
+          </div>
+          <div class="event-time">
+            8am Eastern Time
+          </div>
+        </div>
+      </td>
+      <td class="day">
+        <div class="date">25</div>
+      </td>
+      <td class="day">
+        <div class="date">26</div>
+      </td>
+      <td class="day">
+        <div class="date">27</div>
+      </td>
+      <td class="day">
+        <div class="date">28</div>
+      </td>
+      <td class="day">
+        <div class="date">29</div>
+      </td>
+    </tr>
+    <tr>
+  
+      <td class="day">
+        <div class="date">30</div>
+      </td>
+      <td class="day">
+        <div class="date">31</div>
+        <!-- Next Month -->
+      </td>
+      <td class="day other-month">
+        <div class="date">1</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">2</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">3</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">4</div>
+      </td>
+      <td class="day other-month">
+        <div class="date">5</div>
+      </td>
+  
+  </table>
+  
+    </div>
+
+
+    <!-- footer section -->
+    <footer class="footer padding">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-4 text-center">
+                    <hr class="light" />
+                    <h4>Support</h4>
+                    <hr class="light" />
+                    <p>Troubleshooting</p>
+                    <p>Common Questions</p>
+                    <p>Report a Bug</p>
+                    <p>Get Help</p>
+                </div>
+                <div class="col-md-4 text-center">
+
+                    <h5 style="font-size: 30px;">Craft Board</h5>
+                    <hr class="light" />
+                    
+                    <p class="padding-top">Connect with us</p>
+                    <!-- social icons -->
+                    <div class=" justify-content-center">
+
+                        <i class="fab fa-facebook" style="color:#3b5998; font-size:45px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fab fa-twitter" style="color:#1da1f2; font-size:45px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fab fa-instagram" style="color:#3f729b; font-size:45px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fab fa-youtube" style="color:#FF0000; font-size:45px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <hr class="light" />
+                    <h5>Misc</h5>
+                    <hr class="light" />
+                    <p>Recent blog post</p>
+                    <p>Terms and conditions</p>
+                    <p>Privacy notices</p>
+                    <p>Cookie policy</p>
+                </div>
+                <div class="col-12 text-center">
+                    <hr class="light" />
+                    <h5> &copy; craftboard.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript" src="/style/styles.js"></script>
+
+
+</html>
